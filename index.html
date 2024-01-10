@@ -1,2 +1,81 @@
-list of articles goes here 
-a
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Realmz.io News</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light bg-light justify-content-between">
+    <a class="navbar-brand">Realmz.io</a>
+
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search Articles" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </nav>
+
+  <div id="bg" class="jumbotron">
+    <br>
+    <h1><b>Realmz.io News</b> </h1>
+        <br>
+        <br>
+  </div>
+
+  <div id="bgbig"></div>
+
+  <div class="container">
+    <h1>Articles</h1>
+    <hr>
+
+  </div>
+
+  <div id="articles" class="container">
+    
+  </div>
+
+  <hr>
+  <div style="height: 30vh;"></div>
+  <div id="footer" class="d-flex justify-content-center">
+    <p>&copy; FuturePearStudios 2024</p>
+  </div>
+
+</body>
+<script>
+  async function loadArticles() {
+    let a = await fetch("https://news.realmz.io/articles.json");
+    let data = await a.json();
+
+    let articles = document.getElementById("articles");
+
+    let count = 0;
+    for (let i in data) {
+      let article = document.createElement("div");
+      article.setAttribute("article", data[i].id);
+      article.setAttribute("class", "article");
+      article.innerHTML = "<z style='height: 10px;'></z><p>"+data[i].name+"</p> <p style='font-size: 0.9em;'>"+data[i].Date+"</p>";
+      articles.appendChild(article);
+      count++;
+    }
+
+  }
+  loadArticles();
+
+  document.addEventListener("click", (e) => {
+    let a = e.target.getAttribute("article");
+    if(a == null) return;
+
+    window.location.href = "article.html?article="+a;
+  })
+</script>
+
+</html>
