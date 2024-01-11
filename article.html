@@ -39,18 +39,24 @@
   <div id="bgbig"></div>
 
 
+
   <div class="container" id="content">
     
   </div>
 
   <hr>
-  <div style="height: 30vh;"></div>
+  <div class="container">
+    <p><i class="bi bi-link-45deg" style="font-size: 1.0em;"></i><a href="#shared" id="shareURL" onclick="share()">Share this article</a></p>
+  </div>
+
+  <hr>
+  <div style="height: 20vh;"></div>
   <hr>
   <div id="footer" class="d-flex justify-content-center">
     <p>&copy; FuturePearStudios 2024</p>
     
     <hr>
-    <div style="display: flex; width: 50%;">
+    <div style="display: flex; width: 70%;">
     <div class="cent" style="width: 50%;">
       <p><a target="_parent" style="color: white;" href="https://realmz.io/contact">Contact us</a></p>
     </div>
@@ -81,6 +87,13 @@
     let a = await fetch("https://news.realmz.io/content/"+article+".html");
     let data = await a.text();
     $("content").innerHTML = data;
+  }
+
+  function share(){
+    let url = document.location.href
+    navigator.clipboard.writeText(url);
+
+    $("shareURL").innerHTML = "URL copied to clipboard!"
   }
 
   async function loadArticle() {
