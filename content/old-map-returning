@@ -1,0 +1,28 @@
+<h1>The Old Map Is Returning</h1>
+    <p>Soon, the old pre-2.0 map, "exodus", will be returning to realmz.io. However, there will be significant changes to accommodate for the map's return. This map has been tried and tested and is ideal for PvP.</p>
+    <div class="card bg-light mb-3" style="width: min-content">
+        <div class="card-header">The map Exodus</div>
+        <div class="card-body">
+          <img src="./images/exodus.png" style="max-width: 80vw;"/>
+        </div>
+      </div>
+      <p>The map is undergoing a remaster which will include most of the current biomes in the game and new decorations.</p>
+
+      <h1>Temporarily Removing Bosses</h1>
+      <p>We decided that in the current state that advanced enemies and bosses retract from the realmz.io PvP experience. Bosses will be removed from the game for a short period of time until they will be added back in seperate worlds. Bosses will also have a cooldown timer.</p>
+      <div class="card bg-light mb-3" style="max-width: 100vw;">
+        <div class="card-header">Advanced Enemies that will be unavaliable:</div>
+        <div class="card-body">
+          <ul>
+            <li>Goblins</li>
+            <li>Goblin Warlock</li>
+            <li>Ancient Statues</li>
+            <li>Erthium Eye</li>
+            <li>Mechanical Terror</li>
+            <li>Castaway</li>
+          </ul>
+          
+        </div>
+      </div>
+      <h1>When?</h1>
+      <p>Unfortunately our development process is slow and we do not have any set release date. </p>
