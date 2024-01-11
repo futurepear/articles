@@ -9,12 +9,16 @@
 body, html{
     height: 100%;
 }
+.navbar{
+    background-color: rgba(76, 103, 97, 1.0);
+}
 
 #bgbig{
     position: fixed;
     top: 0;
     left: 0;
     z-index: -10;
+    /* rgb(76, 103, 97) */
     background: linear-gradient(10deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 1.0)), url("./images/mobilebg.png");
     /* background-image: url("./images/mobilebg.png"); */
     background-position: center;
@@ -71,4 +75,24 @@ body, html{
     align-items: center;
     flex-direction: column;
     bottom: 0;
+}
+#socials{
+    display: flex;
+    gap: 10px;
+    font-size: 1.8em;
+}
+#socials a{
+    color: white;
+}
+#socials a:hover{
+    color: rgb(204, 204, 204);
+}
+#footer hr{
+    background: white;
+    width: 50%;
+}
+.cent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
