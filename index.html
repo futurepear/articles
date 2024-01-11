@@ -50,7 +50,7 @@
     <p>&copy; FuturePearStudios 2024</p>
     
     <hr>
-    <div style="display: flex; width: 50%;">
+    <div style="display: flex; width: 70%;">
     <div class="cent" style="width: 50%;">
       <p><a  style="color: white;" href="https://realmz.io/contact">Contact us</a></p>
     </div>
@@ -85,6 +85,7 @@
       let article = document.createElement("div");
       article.setAttribute("article", data[i].id);
       article.setAttribute("class", "article");
+      article.style.background = `linear-gradient(200deg, rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.6)), url("./images/"${data[i].thumbnail})`;
       article.innerHTML = "<z style='height: 10px;'></z><p>"+data[i].name+"</p> <p style='font-size: 0.9em;'>"+data[i].Date+"</p>";
       articles.appendChild(article);
       count++;
