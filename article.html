@@ -78,7 +78,7 @@
         return document.getElementById(x);
     }
   async function setContent(article){
-    let a = await fetch("https://news.realmz.io/articles/"+article+".html");
+    let a = await fetch("https://news.realmz.io/content/"+article+".html");
     let data = await a.text();
     $("content").innerHTML = data;
   }
