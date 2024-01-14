@@ -40,9 +40,11 @@
 
   </div>
 
-  <div id="articles" class="container">
+  <div id="articles" class="container articles">
     
   </div>
+
+  <!-- <iframe src="./embed.html?theme=light" style="width: 600px; height: 200px;"></iframe> -->
 
   <hr>
   <div style="height: 30vh;"></div>
@@ -73,33 +75,9 @@
   </div>
 
 </body>
+<script src="articleLoader.js"></script>
 <script>
-  async function loadArticles() {
-    let a = await fetch("https://news.realmz.io/articles.json");
-    let data = await a.json();
-
-    let articles = document.getElementById("articles");
-
-    let count = 0;
-    for (let i in data) {
-      let article = document.createElement("div");
-      article.setAttribute("article", data[i].id);
-      article.setAttribute("class", "article");
-      article.style.background = `linear-gradient(200deg, rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.6)), url("./images/${data[i].thumbnail}")`;
-      article.innerHTML = "<z style='height: 10px;'></z><p>"+data[i].name+"</p> <p style='font-size: 0.9em;'>"+data[i].Date+"</p>";
-      articles.appendChild(article);
-      count++;
-    }
-
-  }
-  loadArticles();
-
-  document.addEventListener("click", (e) => {
-    let a = e.target.getAttribute("article");
-    if(a == null) return;
-
-    window.location.href = "articles/"+a+".html";
-  })
+  loadArticles(100);
 </script>
 
 </html>
