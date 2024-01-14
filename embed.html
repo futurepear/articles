@@ -28,12 +28,27 @@
         padding: 2px;
         margin: 0;
     }
+    .divider{
+        height: 1px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    @media (max-aspect-ratio: 1/1) {
+        .articlesEmbed{
+            flex-direction: column;
+        }
+        .article{
+            width: 100%;
+            height: 30%;
+        }
+    }
   </style>
 
 </head>
 <body>
     <div id="embed">
-        <p><b><a id="link" href="https://news.realmz.io" target="_blank">News Articles</a></b></p>
+        <p><b><a id="link" href="https://news.realmz.io" target="_blank">View all news articles</a></b></p>
+        <div class="divider"></div>
         <div class="articlesEmbed" id="articles" style="flex-grow: 1; margin-bottom: 5px; margin-top: 5px;"></div>
     </div>
     
