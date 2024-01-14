@@ -32,7 +32,7 @@ body, html{
     font-family: quicksand;
 }
 
-#articles{
+.articles{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -43,7 +43,9 @@ body, html{
     background-color: black;
     background-size: cover;
     max-width: 500px;
-    min-width: 300px;
+    min-width: 100px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
 
     border-radius: 3px;
     aspect-ratio: 5/3;
@@ -58,12 +60,11 @@ body, html{
 }
 .article p{
     color: white;
-    line-height: 5px;
     padding: 10px;
     font-weight: bold;
     margin: 0;
     font-size: 1.4em;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
 }
 #footer{
     height: 30vh;
