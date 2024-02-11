@@ -95,6 +95,8 @@ body, html{
 }
 .article p{
     color: white;
+    user-select: none;
+    pointer-events: none;
     padding: 10px;
     font-weight: bold;
     margin: 0;
