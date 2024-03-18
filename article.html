@@ -107,6 +107,7 @@
     let articles = document.getElementById("articles");
 
     if(!(article in data)){
+       return;
         $("title").innerHTML = "Article not found";
         $("date").innerHTML = "";
         $("content").innerHTML = "Nothing here...";
