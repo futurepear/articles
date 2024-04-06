@@ -1,6 +1,6 @@
 { 
+  "realmzfestinfo": {"name": "Realmzfest Info [UPDATED]", "Date": "Mar 30, 2024", "id": "realmzfestinfo", "thumbnail": "thumbnail_battle.png"},
   "easter2024": {"name": "Easter & April Fools'", "Date": "Mar 31, 2024", "id": "easter2024", "thumbnail": "thumbnail_easter2024.png"},
-  "realmzfestinfo": {"name": "Realmzfest Info", "Date": "Mar 30, 2024", "id": "realmzfestinfo", "thumbnail": "thumbnail_battle.png"},
   "dev-qna": {"name": "Dev Q&A", "Date": "Feb 13, 2024", "id": "dev-qna", "thumbnail": "thumbnail.png"},
   "realmzfest2024": {"name": "Realmzfest 2024", "Date": "Mar 18, 2024", "id": "realmzfest2024", "thumbnail": "thumbnail_portal.png"},
   "update-2.7.1": {"name": "Update 2.7.1", "Date": "Feb 12, 2024", "id": "update-2.7.1", "thumbnail": "thumbnail_skins.png"},
