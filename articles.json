@@ -1,4 +1,5 @@
-{ 
+{
+  "looking-for-devs": {"name": "Looking for Developers", "Date": "Nov 29, 2024", "id": "looking-for-devs", "thumbnail": "thumbnail.png"}, 
   "update-2.9": {"name": "Update 2.9", "Date": "July 1, 2024", "id": "update-2.9", "thumbnail": "thumbnail.png"},
   "realmzfest-results": {"name": "Realmzfest Results ", "Date": "May 6, 2024", "id": "realmzfest-results", "thumbnail": "thumbnail_portal.png"},
   "realmzfestround2": {"name": "Round 3 Info - Realmzfest ", "Date": "Apr 10, 2024", "id": "realmzfestround2", "thumbnail": "thumbnail_portal.png"},
