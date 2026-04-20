@@ -1,4 +1,6 @@
 {
+  "realmzfest2026": {"name": "Realmzfest 2026", "Date": "April 20, 2024", "id": "realmzfest2026", "thumbnail": "thumbnail_portal.png"},
+  "clans-globalmap": {"name": "Clans & Global Map", "Date": "April 20, 2024", "id": "clans-globalmap", "thumbnail": "thumbnail.png"},
   "easter2026": {"name": "Easter & New Weapons!", "Date": "Mar 27, 2026", "id": "easter2026", "thumbnail": "thumbnail_easter2024.png"},
   "survey-2025": {"name": "Fill survey, win 10k coins!", "Date": "Nov 11, 2025", "id": "survey-2025", "thumbnail": "thumbnail_portal.png"}, 
   "looking-for-devs": {"name": "[FIXED LINK] Hiring Developers", "Date": "Nov 29, 2024", "id": "looking-for-devs", "thumbnail": "thumbnail.png"}, 
